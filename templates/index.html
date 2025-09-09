@@ -1,43 +1,34 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About me</title>
-  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моё портфолио</title>
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="#">Главная</a>
-      <a href="#">О себе</a>
-      <a href="#">Проекты</a>
-      <a href="#">Контакты</a>
-    </nav>
-  </header>
-  <main>
-    <section id="hero">
-      <h1></h1>
-      <p></p>
-    </section>
-    
-    <section id="about">
-      <h2></h2>
-      <p></p>
-    </section>
+    <!-- Шапка -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% static 'index.html' %}">Главная</a></li>
+                <li><a href="{% static 'projects.html' %}">Проекты</a></li>
+                <li><a href="{% static 'contacts.html' %}">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section id="projects">
-      <h2></h2>
-      <p></p>
-    </section>
+    <!-- Основной контент -->
+    <main>
+        <h1>Привет, я Backend-разработчик</h1>
+        <p>Здесь вы найдёте информацию обо мне и моих проектах.</p>
+    </main>
 
-    <section id="contacts">
-      <h2></h2>
-      <p></p>
-    </section>
-  </main>
-  <footer>
-    Erzhan Aytimov. 2025.
-  </footer>
+    <!-- Подвал -->
+    <footer>
+        <p>&copy; Erzhan Aytimov. 2025.</p>
+    </footer>
 </body>
 </html>
