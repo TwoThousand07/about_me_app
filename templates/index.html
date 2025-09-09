@@ -1,10 +1,11 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моё портфолио</title>
+    <title>{% trans 'My portfolio' %}</title>
     <!-- Подключение стилей -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
@@ -13,22 +14,22 @@
     <header>
         <nav>
             <ul>
-                <li><a href="{% static 'index.html' %}">Главная</a></li>
-                <li><a href="{% static 'projects.html' %}">Проекты</a></li>
-                <li><a href="{% static 'contacts.html' %}">Контакты</a></li>
+                <li><a href="{% static 'index.html' %}">{% trans 'Home' %}</a></li>
+                <li><a href="{% static 'projects.html' %}">{% trans 'Projects' %}</a></li>
+                <li><a href="{% static 'contacts.html' %}">{% trans 'Contacts' %}</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Основной контент -->
     <main>
-        <h1>Привет, я Backend-разработчик</h1>
-        <p>Здесь вы найдёте информацию обо мне и моих проектах.</p>
+        <h1>{% trans "Hello, I'am Backend developer" %}</h1>
+        <p>{% trans 'Here you find information about me and my projects' %}</p>
     </main>
 
     <!-- Подвал -->
     <footer>
-        <p>&copy; Erzhan Aytimov. 2025.</p>
+        <p>&copy; {% trans 'Erzhan Aytimov' %}. 2025.</p>
     </footer>
 </body>
 </html>
